@@ -1,0 +1,524 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/metropolis-2');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+                
+
+/* header{
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./backgrounds/hero-image.jpg);
+  background-position: bottom;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+} */
+
+
+.bg-img{
+
+  background-image: url(./backgrounds/hero-image.jpg);
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  flex-direction: column;
+}
+
+
+
+
+.bg-img::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.menu{
+  position: relative;
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.menu img:first-of-type{
+  width: 60%;
+}
+
+.menu img{
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.bg-text{
+  padding: 0 36px;
+  margin-bottom: 70px;
+}
+
+.bg-text h1, h4{
+  position: relative;
+  z-index: 1;
+  color: whitesmoke;
+  text-align: left;
+}
+
+.bg-text h1{
+  font-family: domine;
+  font-size: 40px;
+  padding-bottom: 25px;
+  padding-top: 110px;
+  line-height: 42px;
+}
+
+.bg-text h4{
+  padding-top: 25px;
+  line-height: 27px;
+  font-size: 20px;
+  font-family: metropolis;
+  color: rgb(218, 207, 192);
+  font-weight: 170;
+}
+.line{
+  background-color: deeppink;
+  width: 45px;
+  height: 2px;
+  position: relative;
+}
+
+.follow{
+  position: relative;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  margin-left: -78px;
+  margin-top: 60px;
+  font-weight: bold;
+  font-family: metropolis;
+}
+
+.icons{
+  display: flex;
+  justify-content: space-around;
+  gap: 12px;
+}
+.portfolio{
+  margin-bottom: 110px;
+}
+.portfolio .images{
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 20px 45px;
+}
+
+.about{
+  position: relative;
+  max-width: 600px;
+  margin: 100px auto;
+}
+.sp-about{
+  color: deeppink;
+  padding: 0 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.h2-about{
+  padding: 0 30px;
+  font-family: domine;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 25px;
+  margin-bottom: 45px;
+  line-height: 40px;
+
+}
+
+.p-about{
+  padding: 0 30px;
+  font-size: 18px;
+  line-height: 32px;
+  font-family: metropolis;
+  margin-bottom: 60px;
+}
+
+.services{
+  margin-bottom: 120px;
+  background-color: rgb(236, 236, 188);
+}
+
+.sp-services{
+  color: deeppink;
+  padding: 100px 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.s-texts{
+  font-family: metropolis;
+  padding: 0 30px;
+  margin-bottom: 50px;
+}
+
+.s-texts h3{
+  padding-bottom: 25px;
+  font-size: 20px;
+}
+
+.s-texts p{
+  font-size: 21px;
+  line-height: 30px;
+  margin-bottom: 80px;
+}
+
+
+.container{
+  padding: 10px;
+  position: relative;
+  padding-left: 70px;
+ 
+}
+
+.texts{
+  padding: 20px 25px;
+  position: relative;
+  border-radius: 6px;
+  font-size: 18px;
+  padding-left: 40px;
+  font-family: metropolis;
+}
+
+.texts h3{
+  padding-bottom: 25px;
+  font-size: 25px;
+  margin-top: -60px;
+
+}
+
+.texts p{
+  font-size: 15px;
+  line-height: 28px;
+  font-size: 18px;
+}
+
+.circle h2{
+  background-color: rgb(19, 204, 102);
+  text-align: center;
+  padding: 10px;
+  border-radius: 50%;
+  position: relative;
+  color: #fff;
+  width: 47px;
+  left: 30px;
+  top:5px;
+}
+
+.talks h2{
+  text-align: center;
+  margin: 50px 0px;
+  font-size: 30px;
+  font-family: metropolis;
+  padding: 30px 0;
+}
+
+.vl{
+  background-color: #bbb;
+  width: 1px;
+  height: 50px;
+  position: relative;
+  left: 50%;
+  margin-bottom: -40px;
+}
+
+.users{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px ;
+}
+
+.users p:first-of-type{
+  font-family: metropolis;
+  line-height: 30px;
+}
+
+.users p:last-of-type{
+  font-family: metropolis;
+  line-height: 30px;
+}
+
+.avatar{
+  border-radius: 50%;
+  width: 80px;
+  padding-top: 20px;
+}
+
+.users span{
+  font-size: 20px;
+  margin: 5px 0;
+  font-family: metropolis;
+}
+
+.users p:first-of-type{
+  font-size: 20px;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.nav-btn{
+  text-align: center;
+  position: relative;
+}
+
+.dot{
+  height: 12px;
+  width: 12px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 130px;
+}
+
+.rank-img{
+  background-image: url(./backgrounds/stats-background.jpg);
+  height: 950px;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  flex-direction: column;
+}
+
+.rank-img::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.rank-text h2{
+  position: relative;
+  z-index: 1;
+  color: whitesmoke;
+  text-align: center;
+  font-family: metropolis;
+}
+
+.rank-text>h2{
+  font-size: 90px;
+  padding-bottom: 25px;
+  padding-top: 80px;
+  line-height: 42px;
+  font-weight: 400;
+}
+
+.rank-p{
+  padding-top: 25px;
+  line-height: 27px;
+  font-size: 20px;
+  font-family: metropolis;
+  color: rgb(218, 207, 192);
+  font-weight: 100;
+  text-align: center;
+  position: relative;
+  font-weight: 150;
+  margin-bottom: 10px;
+}
+
+.rank-line{
+  background-color: #6b6767;
+  width: 90px;
+  height: .5px;
+  position: relative;
+  left: 25%;
+  margin-top: 15px;
+}
+
+.contact{
+  background-color: rgb(8, 8, 8);
+}
+.sp-contact{
+  color: deeppink;
+  padding: 0 30px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  letter-spacing: 3PX;
+  font-family: metropolis;
+}
+
+.h2-contact{
+  padding: 0 30px;
+  font-family: domine;
+  font-weight: bold;
+  font-size: 30px;
+  color: whitesmoke;
+  margin-top: 25px;
+  margin-bottom: 130px;
+  line-height: 40px;
+}
+
+.c-container h3{
+  color: whitesmoke;
+  padding: 0px 30px;
+  padding-top: 30px;
+  padding-bottom: 5px;
+  font-size: 30px;
+  font-family: metropolis;
+  font-weight: 250;
+}
+
+.c-container p{
+  color: whitesmoke;
+  font-family: metropolis;
+  padding: 0 30px;
+  font-size: 20px;
+  font-weight: 100;
+  padding-bottom: 100px;
+}
+
+.c-line{
+  background-color: deeppink;
+  width: 57px;
+  height: 2px;
+  position: relative;
+  left:9%;
+}
+
+
+.c-container p:last-of-type{
+  font-family: metropolis;
+  line-height: 30px;
+  color: #8a8787;
+  padding-top: 40px;
+
+}
+
+.cont-icons{
+  display: flex;
+   gap: 10px;
+   padding-top: 25px;
+   padding: 30px 32px;
+}
+
+.c-container h6{
+  font-family: metropolis;
+  line-height: 25px;
+  color: #8a8787;
+  padding: 50px 0px;
+  font-size: 15px;
+  font-weight: 100;
+  padding-left: 30px;
+  padding-right: 45px;
+}
+
+.c-container .last{
+  color: whitesmoke;
+}
+
+.c-container form{
+  padding: 0 30px;
+}
+
+.c-container form input{
+  background-color: black;
+  border-radius: 6px;
+  color: #8a8787;
+  border: none;
+  font-family: metropolis;
+  padding: 20px 50px;
+  text-align: center;
+}
+
+.c-container button{
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.btn{
+  background-color: deeppink;
+  border-radius: 6px;
+  color: #fff;
+  border: none;
+  font-family: metropolis;
+  letter-spacing: 4px;
+  padding: 20px 72px;
+  font-weight: 300;
+  text-align: center;
+}
+/* .talks{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container{
+  padding: 5rem;
+  
+}
+
+.card-content{
+  margin-inline: 1.75rem;
+  border-radius: 1.25rem;
+}
+
+.card-article{
+  width: 300px;
+  border-radius: 1.25rem;
+  overflow: hidden;
+
+}
+
+.card-image{
+  position: relative;
+  padding-top: 1.5rem;
+  margin-left: 100px;
+}
+
+.card-data{
+  padding: 1.5rem 2rem;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+.card-img{
+  border-radius: 50%;
+  width: 78px;
+  position: relative;
+  z-index: 5;
+}
+
+.card-name{
+  font-size: 21px;
+}
+
+.card-description{
+  font-weight: 500;
+  font-size: 19.5px;
+  margin-bottom: 1.75rem;
+} */
